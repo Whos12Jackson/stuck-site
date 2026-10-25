@@ -1,0 +1,5 @@
+/* Noto Serif SC（思源宋体同源设计，SIL OFL 1.1）
+   子集：页面用到的 359 个字符；两个字重各约 85KB。
+   重新生成见 README「字体」一节。 */
+@font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:500;font-display:swap;src:url('noto-serif-sc-500.woff2') format('woff2')}
+@font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:600;font-display:swap;src:url('noto-serif-sc-600.woff2') format('woff2')}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stuck 卡词 · 隐私政策 - Stuck 卡词</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root{color-scheme:dark;--bg:#0A1128;--ink:#E8EAF2;--muted:#9AA3BD;--line:#1F2A4A;--y:#FFC72C}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 -apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:56px 24px 40px}
+a{color:var(--y)}
+.brand{display:inline-block;margin-bottom:28px;color:var(--y);font-weight:600;text-decoration:none;letter-spacing:.04em}
+h1{font-size:30px;line-height:1.3;margin:0 0 20px}
+h2{font-size:21px;margin:40px 0 8px;padding-top:8px;border-top:1px solid var(--line)}
+h2.en{border:0;margin-top:28px}
+h3{font-size:17px;margin:26px 0 4px;color:var(--y)}
+p{margin:10px 0}
+.note{color:var(--muted);font-size:14px}
+ul,ol{padding-left:22px}li{margin:6px 0}
+hr{border:0;border-top:1px solid var(--line);margin:44px 0 8px}
+code{background:#16203F;padding:1px 6px;border-radius:4px;font-size:.92em}
+mark{background:var(--y);color:#0A1128;padding:0 4px;border-radius:3px}
+strong{color:#fff}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:24px;text-align:center}
+footer a{color:var(--muted)}footer span{margin:0 10px}
+</style>
+</head>
+<body>
+<main>
+<a class="brand" href="/">⚡ Stuck 卡词</a>
+<h1>Stuck 卡词 · 隐私政策</h1>
+<p class="note">最后更新:2026-10-25(1.0.0)。本文描述浏览器扩展「Stuck 卡词」及官网 www.stuck12.com 如何处理你的数据。</p>
+<h2>一句话版本</h2>
+<p>Stuck 的词库属于你:标注在你的浏览器里完成,词库默认存在本地;只有你注册、登录并主动点「同步到账号」(或退出登录前同步)时,词库才上传到 Stuck 服务器——<strong>其中包括遇见记录:你读过的页面网址、页面标题和词所在的那一句原文</strong>;讲解时只把目标词、所在段落和文章标题发给模型服务商,不发全文、不发账号信息。</p>
+<h2>我们收集什么</h2>
+<h3>存在你的浏览器里(本地)</h3>
+<ul>
+<li><strong>词库</strong>:你确认入库的词、每个词的语境快照(你学到它时的那一句、文章标题、来源网址、时间)。</li>
+<li><strong>遇见记录</strong>:在启用了 Stuck 的页面上(你点过工具栏闪电或按过 Alt+S 的网页,以及粘贴阅读页),词库里的词出现时,会记录它所在的那一句、页面网址和标题(每个词每篇文章只记一条),用于显示「你在 N 篇文章里见过它」和词库里的文章视图。没有启用 Stuck 的页面不记录。</li>
+<li><strong>待确认候选</strong>:你查过、尚未决定是否入库的词。</li>
+<li><strong>目标词表</strong>:你自己粘贴或上传的词表(只用于在你读的文章里标着重号,不公开、不同步给其他用户)。</li>
+<li><strong>设置与登录态</strong>:界面所需的小数据、登录令牌。</li>
+</ul>
+<p>这些数据默认只在你的浏览器中。未注册、未同步时,它们不会离开你的设备。</p>
+<h3>存在 Stuck 服务器上(仅当你注册并同步)</h3>
+<ul>
+<li><strong>邮箱</strong>(注册时填写)与 <strong>scrypt 哈希后的密码</strong>(我们看不到你的明文密码)。</li>
+<li><strong>邀请码</strong>的使用记录(仅在启用邀请码注册期间:哪个码何时被用于注册)。</li>
+<li><strong>词库与语境快照</strong>:与本地相同的词条数据,用于多设备同步;严格按账号隔离,其他用户无法查看。</li>
+<li><strong>遇见记录会同步到服务器</strong>:同步时,每条遇见记录里的<strong>页面网址、页面标题和词所在的那一句原文</strong>会随词条一起上传并保存在你的账号下。如果你不希望这些内容上传,请不要点「同步到账号」,Stuck 仍可在本地完整使用;你也可以在词库里删除词条,再同步一次,服务器上对应的记录会一并删除。</li>
+<li><strong>登录会话</strong>记录(令牌与有效期)。</li>
+<li><strong>使用事件</strong>:仅在登录状态下上报,包含事件名(激活 / 讲解 / 入库 / 查看历史语境 / 打开阅读层 / 正文抽取失败 / 打开粘贴阅读页)、发生时间与少量数值属性(如标注数量、是否来自目标词)。<strong>不包含</strong>你读的文章、单词、词表或标题内容。</li>
+<li><strong>来源 IP</strong>:服务器为限制滥用(登录失败次数、未登录时的每日试用次数)会临时按来源 IP 计数,计数按天清除;反向代理的访问日志也会记录 IP 与访问时间。</li>
+</ul>
+<h3>官网(www.stuck12.com)</h3>
+<ul>
+<li>官网名单页如果你填写邮箱加入内测名单,我们保存该邮箱,仅用于通知内测与上线;官网不使用第三方统计或广告代码。</li>
+</ul>
+<h3>发给模型服务商的内容(讲解功能)</h3>
+<p>点击讲解时,请求中只包含三样:</p>
+<ol>
+<li>目标词;</li>
+<li>目标词所在的<strong>一个段落</strong>(上限约 300 词,不是全文);</li>
+<li>文章标题。</li>
+</ol>
+<p><strong>不包含</strong>:账号信息、邮箱、你的词库、浏览历史、页面网址、整篇文章。讲解结果会缓存以减少重复调用;缓存只含讲解文本,不含你的身份信息。</p>
+<p>段落译文与讲解使用同一范围:只发送当前段落与标题,不发送全文。</p>
+<p><strong>阅读层与粘贴阅读页</strong>:正文只在你本机的浏览器里处理,页面 HTML 与粘贴的文字都不会上传服务器;只有你主动点开讲解或译文时,才按上面的范围发送目标词与那一段。</p>
+<ul>
+<li>模型服务商:第三方大模型服务（目前为小米 MiMo）;按其承诺,API 数据不用于模型训练。</li>
+<li>后端部署地:中国大陆(阿里云服务器)。</li>
+</ul>
+<h2>我们不收集什么</h2>
+<ul>
+<li>不收集浏览历史。标注只在你启用了 Stuck 的页面上进行;这些页面上只记录词库里的词出现的那一句、网址和标题(见上「遇见记录」),不记录你访问过的其他页面,也不保存文章全文。</li>
+<li>无广告、无第三方统计 SDK、无 Cookie 追踪。</li>
+<li>不出售、不出租、不共享你的数据给广告商或任何第三方(模型服务商仅按上述范围接收讲解请求所需的最小内容)。</li>
+<li>浏览器申请的权限仅为完成功能所必需,清单与理由见《权限与合规说明》。</li>
+</ul>
+<h2>数据保存多久</h2>
+<ul>
+<li>本地数据:由你控制,可随时删除(见下)。</li>
+<li>服务器数据:保存至你要求注销账号并删除为止;如服务终止,将提前通知并提供导出。</li>
+</ul>
+<h2>你的权利</h2>
+<ul>
+<li><strong>导出</strong>:目前请邮件联系我们导出你的词库。</li>
+<li><strong>删除</strong>:可以在词库里删除单个词条并同步;清除全部本地数据移除扩展即可;注销账号并删除服务器数据请邮件联系我们。</li>
+<li><strong>联系</strong>:memostar1212@gmail.com</li>
+</ul>
+<h2>变更</h2>
+<p>政策如有实质变更,将在本页顶部更新日期,重大变更另行通知注册用户。</p>
+<hr>
+<h2 class="en">Privacy Policy (English summary)</h2>
+<p>Stuck keeps your vocabulary in your browser by default. On pages where you have enabled Stuck (by clicking the toolbar icon or pressing Alt+S, and on the paste reading page), it records the sentence, page URL and title where a word from your vocabulary appears (one record per word per article), so it can show where you have met the word before. <strong>If you register and choose to sync, these encounter records — including page URLs, page titles and the original sentences — are uploaded to and stored on the Stuck server under your account</strong>, strictly isolated per account. When you request an explanation, Stuck sends only the target word, its containing paragraph (max ~300 words) and the article title to the model provider — never your account information, page URL or the full article. No ads, no trackers, no browsing-history collection, no data sales. Contact: memostar1212@gmail.com.</p>
+</main>
+<footer><span>© 2026 Stuck</span><a href="/">返回首页</a></footer>
+</body>
+</html>
