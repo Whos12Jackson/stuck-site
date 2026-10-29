@@ -46,13 +46,13 @@ footer a{color:var(--muted)}footer span{margin:0 10px}
 <p>这些数据默认只在你的浏览器中。未注册、未同步时,它们不会离开你的设备。</p>
 <h3>存在 Stuck 服务器上(仅当你注册并同步)</h3>
 <ul>
-<li><strong>邮箱</strong>(注册时填写)与 <strong>scrypt 哈希后的密码</strong>(我们看不到你的明文密码)。</li>
+<li><strong>邮箱</strong>(注册时填写,用于登录、找回密码与安全验证;只有你主动请求时才向它发送验证码邮件)与 <strong>scrypt 哈希后的密码</strong>(我们看不到你的明文密码)。</li>
 <li><strong>邀请码</strong>的使用记录(仅在启用邀请码注册期间:哪个码何时被用于注册)。</li>
 <li><strong>词库与语境快照</strong>:与本地相同的词条数据,用于多设备同步;严格按账号隔离,其他用户无法查看。</li>
 <li><strong>遇见记录会同步到服务器</strong>:同步时,每条遇见记录里的<strong>页面网址、页面标题和词所在的那一句原文</strong>会随词条一起上传并保存在你的账号下。如果你不希望这些内容上传,请不要点「同步到账号」,Stuck 仍可在本地完整使用;你也可以在词库里删除词条,再同步一次,服务器上对应的记录会一并删除。</li>
 <li><strong>登录会话</strong>记录(令牌与有效期)。</li>
 <li><strong>使用事件</strong>:仅在登录状态下上报,包含事件名(激活 / 讲解 / 入库 / 查看历史语境 / 打开阅读层 / 正文抽取失败 / 打开粘贴阅读页)、发生时间与少量数值属性(如标注数量、是否来自目标词)。<strong>不包含</strong>你读的文章、单词、词表或标题内容。</li>
-<li><strong>来源 IP</strong>:服务器为限制滥用(登录失败次数、未登录时的每日试用次数)会临时按来源 IP 计数,计数按天清除;反向代理的访问日志也会记录 IP 与访问时间。</li>
+<li><strong>来源 IP</strong>:注册与接口调用时会记录来源 IP,用于<strong>限流、防刷与安全审计</strong>(防批量注册、登录失败次数、每日试用与调用次数),<strong>保留 180 天后自动删除</strong>。反向代理的访问日志也会记录 IP 与访问时间(按服务器日志轮转策略保留)。</li>
 </ul>
 <h3>官网(www.stuck12.com)</h3>
 <ul>
@@ -94,7 +94,7 @@ footer a{color:var(--muted)}footer span{margin:0 10px}
 <p>政策如有实质变更,将在本页顶部更新日期,重大变更另行通知注册用户。</p>
 <hr>
 <h2 class="en">Privacy Policy (English summary)</h2>
-<p>Stuck keeps your vocabulary in your browser by default. On pages where you have enabled Stuck (by clicking the toolbar icon or pressing Alt+S, and on the paste reading page), it records the sentence, page URL and title where a word from your vocabulary appears (one record per word per article), so it can show where you have met the word before. <strong>If you register and choose to sync, these encounter records — including page URLs, page titles and the original sentences — are uploaded to and stored on the Stuck server under your account</strong>, strictly isolated per account. When you request an explanation, Stuck sends only the target word, its containing paragraph (max ~300 words) and the article title to the model provider — never your account information, page URL or the full article. No ads, no trackers, no browsing-history collection, no data sales. Contact: memos12.support@gmail.com.</p>
+<p>Stuck keeps your vocabulary in your browser by default. On pages where you have enabled Stuck (by clicking the toolbar icon or pressing Alt+S, and on the paste reading page), it records the sentence, page URL and title where a word from your vocabulary appears (one record per word per article), so it can show where you have met the word before. <strong>If you register and choose to sync, these encounter records — including page URLs, page titles and the original sentences — are uploaded to and stored on the Stuck server under your account</strong>, strictly isolated per account. When you request an explanation, Stuck sends only the target word, its containing paragraph (max ~300 words) and the article title to the model provider — never your account information, page URL or the full article. Your email is used for sign-in, password recovery and verification codes; your source IP is recorded for rate limiting, abuse prevention and security auditing and is <strong>deleted after at most 180 days</strong>. No ads, no trackers, no browsing-history collection, no data sales. Contact: memos12.support@gmail.com.</p>
 </main>
 <footer><span>© 2026 Stuck</span><a href="/">返回首页</a></footer>
 </body>
